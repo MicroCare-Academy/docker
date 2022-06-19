@@ -26,4 +26,32 @@ docker exec -it <container_id> /bin/bash :to login to container
   
   docker history imageid
   
+  ENTRYPOINT
+WORKDIR
+ENV
+CMD
+COPY
+
+
+
+docker run -d jenkins/jenkins -v /home/demo:/Users/sh030348/sonar -p 7082:8080
+
+sudo docker run –d –volume-driver=flocker –v /home/demo:/var/jenkins_home –p  8080:8080 –p 50000:50000 jenkins/jenkins
+
+
+sudo docker volume create –-name=demo –opt o=size=100m
+
+sudo docker volume ls
+
+docker network ls
+
+sudo docker network  inspect bridge
+
+sudo docker network create –-driver bridge new_nw
+
+sudo docker run –it –network=new_nw ubuntu:latest /bin/bash
+sudo docker network inspect new_nw
+
+docker build -t syed0071/getting-started:1.0 .
+  
   
