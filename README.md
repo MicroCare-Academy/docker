@@ -54,4 +54,7 @@ sudo docker network inspect new_nw
 
 docker build -t syed0071/getting-started:1.0 .
   
+  https://github.com/docker/getting-started
+  
+  
   
